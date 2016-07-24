@@ -3,12 +3,12 @@
 //It will run after every 3 second.
 setInterval(function() {
     //Get the Connect Buttons available in the "People You May Know" Page i.e: 12
-    var connectButtons = document.getElementsByClassName('bt-request-buffed');
-    for (var i = 0; i < connectButtons.length; i++) { //Iterate to 12 Invitations 
+    var getAllConnectButtons = document.getElementsByClassName('bt-request-buffed');
+    for (var i = 0; i < getAllConnectButtons.length; i++) { //Iterate to 12 Invitations 
         //Returning the Name of the Person
-        console.log(connectBtns[i].parentNode.children[0].children[1].children[0].textContent);
+        console.log(getAllConnectButtons[i].parentNode.children[0].children[1].children[0].textContent);
         //Sending the Invitation
-        connectBtns[i].click();
+        getAllConnectButtons[i].click();
     }
 }, 3000);
 
